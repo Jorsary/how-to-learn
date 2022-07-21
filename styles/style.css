@@ -97,7 +97,7 @@
 .description {
   display: flex;
   justify-content: center;
-  margin: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .two-columns {
@@ -141,33 +141,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 100px 0 100px 0;
 }
 
 .section-title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  margin: 0;
+  padding-bottom: 20px;
+  width: 60%;
+  text-align: center;
 }
 
 .section-subtitle {
   line-height: 34px;
   font-size: 24px;
-}
-
-.digits__title {
-  margin: 0 0 20px 0;
-  width: 60%;
-  text-align: center;
-}
-
-.digits__subtitle {
   margin: 0;
   width: 60%;
   text-align: center;
 }
 
-.digits__table {
+.table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -191,4 +186,77 @@
   line-height: 1.2;
   font-size: 18px;
 
+}
+
+.feynman {
+  background-color: #f2f2f2;
+  background-image: url(/images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 867px 637px;
+  width: 100%;
+  height: 890px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.feynman__title {
+  text-align: center;
+  max-width: 648px;
+  width: 100%;
+  margin: 0 auto 70px auto;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+
+}
+
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0 90px 0;
+  background-color: #1f1f1f;
+  z-index: -1;
+  position: relative;
+  overflow: hidden; 
+}
+.kaufman__triangle {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+
+}
+.section-title_theme_dark {
+  color: #fff;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  color: #fff;
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  z-index: 1;
 }
