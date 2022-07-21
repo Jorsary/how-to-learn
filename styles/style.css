@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -18,7 +18,6 @@
   background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
-
 
 .logo {
   width: 228px;
@@ -69,6 +68,7 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -100,7 +100,6 @@
   color: #2f80ed;
   font-weight: normal;
   margin: 0;
-
 }
 
 .two-columns__span-accent {
@@ -115,13 +114,10 @@
   gap: 30px;
 }
 
-
-
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   margin: 0;
-
 }
 
 .digits {
@@ -135,8 +131,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 0 0 20px 0;
   width: 60%;
   text-align: center;
 }
@@ -172,7 +167,6 @@
   margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
-
 }
 
 .feynman {
@@ -201,10 +195,9 @@
   text-align: center;
   line-height: 51px;
   font-size: 36px;
-
 }
 
-.feynman__link{
+.feynman__link {
   position: absolute;
   top: 50%;
   right: 48px;
@@ -220,18 +213,16 @@
   align-items: center;
   padding: 90px 0 90px 0;
   background-color: #1f1f1f;
-  z-index: -1;
   position: relative;
   overflow: hidden;
 }
 .kaufman__triangle {
+  background-image: url(/images/kaufman-triangle.svg);
   position: absolute;
-  z-index: 0;
-  overflow: hidden;
+  top: 0;
   right: -210px;
   width: 877px;
   height: 877px;
-
 }
 .section-title_theme_dark {
   color: #fff;
@@ -245,12 +236,11 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
+  color: #fff;
   margin-right: 0;
   margin-top: 80px;
   z-index: 1;
 }
-
 
 .footer {
   min-height: 350px;
@@ -264,17 +254,12 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-
-
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
   position: relative;
-  display: flex;
   justify-content: space-between;
-  flex-direction: column;
-
 }
 
 .logo_place_footer {
@@ -315,11 +300,20 @@
 }
 
 .footer__column_content_social {
-
 }
 
 .footer__social-icon {
   padding-right: 10px;
   width: 16px;
   height: 16px;
+}
+
+.link {
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.link:hover {
+  transform: scale(1.05);
+  opacity: 0.6;
 }
