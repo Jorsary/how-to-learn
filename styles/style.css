@@ -235,7 +235,7 @@
   background-color: #1f1f1f;
   z-index: -1;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .kaufman__triangle {
   position: absolute;
@@ -259,4 +259,75 @@
 .table__cell_theme_dark {
   width: 200px;
   z-index: 1;
+}
+
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  min-height: 350px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0 40px;
+
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.logo_place_footer {
+  background-image: url(/images/logo_place_footer.svg);
+}
+
+.footer__author {
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  margin: 18px 0;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  padding: 0 0 16px 0;
+  margin: 0;
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__column_content_social {
+
+}
+
+.footer__social-icon {
+  padding-right: 10px;
+  width: 16px;
+  height: 16px;
 }
