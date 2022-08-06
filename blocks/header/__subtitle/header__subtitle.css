@@ -4,8 +4,9 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  margin: 0;
   line-height: 25px;
   font-size: 18px;
   z-index: 2;
+  margin: 0;
+  padding: 0;
 }
